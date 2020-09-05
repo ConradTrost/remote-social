@@ -3,6 +3,8 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ### Developed by [**Conrad Trost**](https://github.com/retro1967), [**Joseph DeWoody**](https://github.com/jpd61), and [**Courtney Stanton**](https://github.com/clstanton)
 
+  ## [Deployed App](https://still-falls-22027.herokuapp.com/)
+
   ## Description
   #### Search for movies using the TMdB API and save them to your watchlist.
 
