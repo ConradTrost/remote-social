@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { InputGroup, Form, Button } from 'react-bootstrap';
 
+
 class Homepage extends Component {
     constructor(props) {
         super(props);
@@ -26,6 +27,7 @@ class Homepage extends Component {
         return (
             <section className="my-5 homepage">
                 <div className="home-container">
+
 
                 <p className="display-4 home-text">Keep Track of Movies Your Way.</p>
 
