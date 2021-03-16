@@ -4,7 +4,7 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "build": "npm run install && cd client && npm run build",
+    "build": "cd client && npm run build",
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/clstanton/remote-social"
+    "url": "https://github.com/retro1967/remote-social"
   },
   "keywords": [],
   "author": "",
