@@ -4,10 +4,9 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "npm run start:prod || npm run start:dev",
     "build": "cd client && npm run build",
     "start:prod": "cd server && npm start",
-    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "start:dev": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "dev": "concurrently \"cd client && npm run start\" \"cd server && npm start\" "
   },
