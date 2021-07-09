@@ -1,6 +1,6 @@
 import React from 'react';
 import Auth from '../utils/auth';
-import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
+import { Container, CardColumns, Card, Button } from 'react-bootstrap';
 import { removeMovieId } from '../utils/localStorage';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { REMOVE_MOVIE } from '../utils/mutations';

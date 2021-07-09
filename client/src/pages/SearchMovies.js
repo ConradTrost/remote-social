@@ -38,6 +38,7 @@ const SearchMovies = () => {
         if (movie.poster_path) {
           return movie;
         }
+        return console.log('movie.poster_path is missing!'); // This is new
       });
 
       console.log(filteredData);
