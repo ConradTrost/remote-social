@@ -9,7 +9,7 @@ export const getMe = (token) => {
   };
   
   export const createUser = (userData) => {
-    return fetch('/api/users', {
+    return fetch('/graphql/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export const getMe = (token) => {
   };
   
   export const loginUser = (userData) => {
-    return fetch('/api/users/login', {
+    return fetch('/graphql/users/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ export const getMe = (token) => {
   
   // save movie data for a logged in user
   export const saveMovie = (movieData, token) => {
-    return fetch('/api/users', {
+    return fetch('/graphql/users', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ export const getMe = (token) => {
   
   // remove saved movie data for a logged in user
   export const deleteMovie = (movieId, token) => {
-    return fetch(`/api/users/movies/${movieId}`, {
+    return fetch(`/graphql/users/movies/${movieId}`, {
       method: 'DELETE',
       headers: {
         authorization: `Bearer ${token}`,
