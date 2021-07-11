@@ -25,7 +25,7 @@ class Homepage extends Component {
     render() {
         
         return (
-            <section className="my-5 homepage">
+            <section className="homepage">
                 <div className="home-container">
 
 

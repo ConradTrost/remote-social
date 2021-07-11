@@ -90,7 +90,9 @@ const SearchMovies = () => {
   return (
     <>
       {!searchedMovies.length && <Homepage handleFormSubmit={handleFormSubmit} />}
-      {searchedMovies.length && <SearchForm handleFormSubmit={handleFormSubmit} />}
+      {searchedMovies.length > 0 && 
+      <div className="mb-5">
+      <SearchForm handleFormSubmit={handleFormSubmit} />
 
       <Container>
         <h2 className="results-heading">
@@ -128,6 +130,8 @@ const SearchMovies = () => {
           })}
         </CardColumns>
       </Container>
+      </div> 
+      }
     </>
   );
 };
