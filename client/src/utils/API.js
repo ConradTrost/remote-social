@@ -1,6 +1,6 @@
 // route to get logged in user's info (needs the token)
 export const getMe = (token) => {
-    return fetch('/api/users/me', {
+    return fetch('https://remote-social-backend.herokuapp.com/api/users/me', {
       headers: {
         'Content-Type': 'application/json',
         authorization: `Bearer ${token}`,
@@ -9,7 +9,7 @@ export const getMe = (token) => {
   };
   
   export const createUser = (userData) => {
-    return fetch('/graphql/users', {
+    return fetch('https://remote-social-backend.herokuapp.com/graphql/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export const getMe = (token) => {
   };
   
   export const loginUser = (userData) => {
-    return fetch('/graphql/users/login', {
+    return fetch('https://remote-social-backend.herokuapp.com/graphql/users/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ export const getMe = (token) => {
   
   // save movie data for a logged in user
   export const saveMovie = (movieData, token) => {
-    return fetch('/graphql/users', {
+    return fetch('https://remote-social-backend.herokuapp.com/graphql/users', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ export const getMe = (token) => {
   
   // remove saved movie data for a logged in user
   export const deleteMovie = (movieId, token) => {
-    return fetch(`/graphql/users/movies/${movieId}`, {
+    return fetch(`https://remote-social-backend.herokuapp.com/graphql/users/movies/${movieId}`, {
       method: 'DELETE',
       headers: {
         authorization: `Bearer ${token}`,
