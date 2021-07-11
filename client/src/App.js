@@ -17,7 +17,7 @@ const client = new ApolloClient({
       }
     })
   },
-  uri: '/graphql'
+  uri: 'https://remote-social-backend.herokuapp.com/graphql'
 });
 
 function App() {
