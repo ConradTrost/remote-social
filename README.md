@@ -24,17 +24,19 @@
 ## Installation Instructions
 Clone the repository and run `npm install` in the root directory command line.
 
-Type `cd client` and run `npm install` again. 
+This will install all necessary packages in `root`, `client`, and `server` directory.
 
-Do the same for the server file (`cd ../server` `npm install`)
+Open client/package.json and change the proxy to "http://localhost:3001/"
 
-In the server directory, run `npm start`. 
+Open client/src/utils/API.js and edit all /graphql paths to be relative paths.
+For example, `'https://remote-social-backend.herokuapp.com/graphql/users/me'` => `'/graphql/users/me'`.
 
-Open a new terminal window and move to the client directory. Run `npm start`.
+Open client/src/App.js, on line 20 change uri to `/graphql`.
+
+## Usage Instructions
 
 
-## Usage Instructions 
-N/A
+In the `root` directory, run `npm run start:dev`. This will run a script to start both `client` and `server`.
 
 ## Contributions
 Submit a pull request with updated code. All contributions are credited
