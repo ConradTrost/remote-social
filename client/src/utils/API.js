@@ -1,6 +1,6 @@
 // route to get logged in user's info (needs the token)
 export const getMe = (token) => {
-    return fetch('https://remote-social-backend.herokuapp.com/api/users/me', {
+    return fetch('https://remote-social-backend.herokuapp.com/graphql/users/me', {
       headers: {
         'Content-Type': 'application/json',
         authorization: `Bearer ${token}`,
